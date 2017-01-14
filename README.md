@@ -16,7 +16,7 @@ approachable hardware task and the V2 camera module is extremely approachable fr
 
 ## Hardware Components
 * Raspberry Pi3 
-* HC-SR501 Pyroelectric Infrared PIR Motion Sensor Detector Modules (spec sheet)[http://www.mpja.com/download/31227sc.pdf]
+* HC-SR501 Pyroelectric Infrared PIR Motion Sensor Detector Modules [spec sheet](http://www.mpja.com/download/31227sc.pdf)
 * Pi NoIR Camera Module V2
 * bread board, wires, resistors, etc
 
