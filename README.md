@@ -19,6 +19,15 @@ approachable hardware task and the V2 camera module is extremely approachable fr
 * bread board, wires, resistors, etc
 
 ## How to use!
+
+### Clone repository to rpi
+Open a terminal in the home directory and use the following command to clone this repository
+
+`git clone https://github.com/Jwely/pimopic pimopic`
+
+or, to update it, cd into the repo folder and use `git pull`
+
+### Setup configuration
 Firstly, this bot sends alerts through email, so you will want to set up an email account for the bot to use.
 Then we want to add this information to a config file. You should probably set permissions on this file to protect it.
 The config file is of json format, and `my_config.json` can be used as a template. It looks like this:
