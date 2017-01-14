@@ -1,0 +1,7 @@
+
+# dont commit any config files except the example my_config.json!
+*config.json
+!my_config.json
+
+
+.idea

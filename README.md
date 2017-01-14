@@ -12,15 +12,25 @@ Limited utility may exist in the end result, but the **purpose** of this project
 how to program with sensor hardware on the raspberry pi. A simple motion detector wired through the GPIO seems like a very 
 approachable hardware task and the V2 camera module is extremely approachable from the python side.
 
-## Primary components
+## Hardware Components
 * Raspberry Pi3 
 * HC-SR501 Pyroelectric Infrared PIR Motion Sensor Detector Modules
 * Pi NoIR Camera Module V2
 * bread board, wires, resistors, etc
 
-## Help resources used
+## How to use!
+Firstly, this bot sends alerts through email, so you will want to set up an email account for the bot to use.
+for a gmail account, your config file should look something like this:
 
-
-## Log
+```json
+{
+  "src_addr": "gmail address to send alerts FROM",
+  "src_pass": "password to gmail account to send alerts FROM",
+  "dest_addr": "gmail address to send the alerts TO",
+  "smtp_addr": "smtp.gmail.com",
+  "smtp_port": 587,
+  "imap_addr": "imap.gmail.com"
+}
+```
 
 
