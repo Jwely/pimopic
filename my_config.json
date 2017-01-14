@@ -1,9 +1,0 @@
-
-{
-  "src_addr": "gmail address to send alerts FROM",
-  "src_pass": "password to gmail account to send alerts FROM",
-  "dest_addr": "gmail address to send the alerts TO",
-  "smtp_addr": "smtp.gmail.com",
-  "smtp_port": 587,
-  "imap_addr": "imap.gmail.com"
-}

@@ -47,7 +47,6 @@ class Emailer(BaseMonitor):
         self.dest_addr = None
         self.smtp_addr = None
         self.smtp_port = None
-        self.imap_addr = None
 
         super().__init__(config_file)
 
