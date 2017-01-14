@@ -20,7 +20,8 @@ approachable hardware task and the V2 camera module is extremely approachable fr
 
 ## How to use!
 Firstly, this bot sends alerts through email, so you will want to set up an email account for the bot to use.
-for a gmail account, your config file should look something like this:
+Then we want to add this information to a config file. You should probably set permissions on this file to protect it.
+The config file is of json format, and `my_config.json` can be used as a template. It looks like this:
 
 ```json
 {
