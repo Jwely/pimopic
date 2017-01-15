@@ -1,6 +1,7 @@
 import smtplib
 import os
-import simplejson as json
+import json
+from datetime import datetime
 from contextlib import contextmanager
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -8,8 +9,11 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 
-class BaseMonitor(object):
-    """ Base monitor class that handles config reads and serves as template """
+class BaseMessenger(object):
+    """
+    Base configclass that allows multiple children to read relevant info
+    from one config file
+    """
 
     def __init__(self, config_file):
         """
@@ -30,9 +34,9 @@ class BaseMonitor(object):
             if k in self.__dict__.keys():
                 if self.__dict__[k] is None:
                     setattr(self, k, v)
+                    
 
-
-class Emailer(BaseMonitor):
+class Emailer(BaseMessenger):
     """
     The emailer object sends emails from the source account to the destination
     address.
@@ -92,7 +96,7 @@ class Emailer(BaseMonitor):
         self.outbox = []
 
 
-class TextMessager(BaseMonitor):
+class TextMessager(BaseMessenger):
     def __init__(self, config_file):
         super().__init__(config_file)
         raise NotImplementedError('finish me!')
