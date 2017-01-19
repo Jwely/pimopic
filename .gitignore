@@ -3,5 +3,5 @@
 *config.json
 !pimopic/my_config.json
 
-
+*.pyc
 .idea
