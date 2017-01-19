@@ -9,7 +9,7 @@ class PiCameraManager(object):
     def __init__(self):
         # configure the picamera
         self.camera = picamera.PiCamera()
-        #self.camera.brightness = 80
+        self.camera.brightness = 80
 
         # make sure it isn't already recording.
         try:
