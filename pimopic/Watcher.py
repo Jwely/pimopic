@@ -45,7 +45,7 @@ class Watcher(object):
                 image = self.camera.capture()
                 report_content = {
                     'subject': 'Alert!',
-                    'body': 'See video',
+                    'body': 'See image!',
                     'attachment': image
                 }
                 self.report(report_content)
