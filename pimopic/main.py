@@ -1,8 +1,4 @@
-from pimopic.Messengers import Emailer
-from pimopic.PiCameraManager import PiCameraManager
-from pimopic.IOclasses import Input, Output
-
-from pimopic.Watcher import Watcher
+from pimopic import Emailer, PiCameraManager, Input, Output, Watcher
 
 msensor1 = Input(11)
 msensor2 = Input(13)
