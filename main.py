@@ -7,10 +7,12 @@ camera = PiCameraManager()
 messenger = Emailer('jeff_config.json')
 
 if __name__ == "__main__":
+    print("setting up a watcher!")
     w = Watcher(camera,
                 [msensor1, msensor2],
                 [led],
                 messenger)
+    print("starting watch!")
     w.watch()
                 
                 
