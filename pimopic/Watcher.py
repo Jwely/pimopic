@@ -41,6 +41,7 @@ class Watcher(object):
         while True:
             # if tripped raise alarms and start recording
             if self.check_triggers():
+                print('Motion detected!')
                 self.raise_alarms()
                 image = self.camera.capture()
                 report_content = {
